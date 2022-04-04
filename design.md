@@ -39,9 +39,10 @@
   - Headings
   - Text for CTA in Nav bar
   - Hover background for CTA in Nav bar
-- Gray 400
-  - Background for CTA in Nav bar
   - Body text
+- Gray 400
+  - Decorative rectangles
+  - Background for CTA in Nav bar
 - White
   - Text for CTA in Head
   - Text for CTA in Nav bar when hovered
@@ -96,7 +97,7 @@
     - 310 x 48
     - Justified `space-between`
     - aligned `center`
-    - px-14 px-12
+    - px-14 py-12
     - mr-32
     - br-8
   - Release date
