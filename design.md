@@ -70,6 +70,7 @@
 
 - Body
   - mt-24
+  - mx-24
   - Everything centered except images
 - Nav bar
   - 327 x 48
@@ -137,7 +138,6 @@
 
 #### Distinguishing features
 
-- Content no longer centered horizontally; now, left margin of 40
 - Images now share space with Head, namely top-view
 - Orange image no longer cropped
 - Description flows horizontally instead of vertically
@@ -146,7 +146,7 @@
 #### Dimensions
 
 - Body
-  - ml-40
+  - mx-40
   - mt-40
 - Nav bar
   - 689 x 58
@@ -187,7 +187,7 @@
     - mb-30
   - Side-view
     - 445 x 320
-    - mr-125
+    - mr-32
   - Orange
     - 214 x 320
     - mr-32
@@ -269,7 +269,7 @@
     - mb-30
   - Side-view
     - 445 x 320
-    - mr-30
+    - mr-125
   - Orange
     - 214 x 320
     - mr-32
