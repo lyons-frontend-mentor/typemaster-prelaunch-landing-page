@@ -86,6 +86,7 @@
     - px-14 px-12
 - Head
   - 327 x 286
+  - mb-64
   - Flex column
   - Text left-aligned
   - No padding

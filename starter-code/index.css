@@ -25,12 +25,19 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 /* #endregion */
 
 /* Typography */
 /* #region */
 
 body {
+  margin-top: 24px;
+  margin-inline: 24px;
+
   color: var(--blue-400);
   font-family: 'Barlow', sans-serif;
   font-size: 16px;
@@ -43,6 +50,7 @@ h1 {
   font-size: 56px;
   line-height: 1.0;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -50,6 +58,7 @@ h2 {
   font-size: 32px;
   line-height: 36px;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -57,6 +66,7 @@ h3 {
   font-size: 24px;
   line-height: 28px;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 /* #endregion */
@@ -97,8 +107,11 @@ h3 {
 
 /* Intro */
 .intro {
+  margin-bottom: 64px;
+
   display: flex;
   flex-direction: column;
+
 }
 .intro__header {
   margin-bottom: 32px;
@@ -128,6 +141,106 @@ h3 {
 .intro__cta:hover,
 .intro__cta:focus {
   background-color: var(--orange-300);
+}
+.intro__date {
+  text-transform: uppercase;
+}
+
+
+/* Images */
+.images__top {
+  margin-right: -24px;
+  margin-bottom: 24px;
+
+  width: 372px;
+  height: 331px;
+
+  background-image: url('assets/mobile/image-keyboard.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 20px;
+}
+.bottom-images {
+  display: flex;
+  gap: 24px;
+}
+.images__orange {
+  margin-left: -48px;
+  margin-bottom: 72px;
+
+  width: 129px;
+  height: 193px;
+
+  background-image: url('assets/mobile/image-phone-and-keyboard.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--orange-600);
+  background-blend-mode: multiply;
+
+  border-radius: 20px;
+}
+.images__side {
+  width: 220px;
+  height: 193px;
+
+  background-image: url('assets/mobile/image-glass-and-keyboard.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 20px;
+}
+
+
+/* Description */
+.desc {
+  margin-bottom: 110px;
+
+  text-align: center;
+}
+.desc__header {
+  margin-bottom: 24px;
+}
+
+
+/* Features */
+.features {
+  margin-bottom: 96px;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 64px;
+  text-align: center;
+}
+.feature__logo-bg {
+  margin-bottom: 48px;
+
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--orange-600);
+  border-radius: 16px;
+}
+.feature__header {
+  margin-bottom: 24px;
+}
+
+
+/* Footer */
+.footer {
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+.footer > span {
+  font-weight: 700;
 }
 
 /* #endregion */
