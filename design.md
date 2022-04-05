@@ -52,6 +52,7 @@
 
 - Barlow font; Black and Medium
 - H1: Barlow Black, 56px - 56px, all caps
+  - 48px - 48px in mobile
 - H2: Barlow Black, 32px - 36px, all caps
 - H3: Barlow Black, 24px - 28px, all caps
 - Body: Barlow Medium, 16px - 26px

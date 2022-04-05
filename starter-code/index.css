@@ -47,7 +47,7 @@ body {
 
 h1 {
   color: var(--blue-600);
-  font-size: 56px;
+  font-size: 48px;
   line-height: 1.0;
   font-weight: 900;
   text-transform: uppercase;
@@ -109,9 +109,10 @@ h3 {
 .intro {
   margin-bottom: 64px;
 
+  max-width: 36ch;
+
   display: flex;
   flex-direction: column;
-
 }
 .intro__header {
   margin-bottom: 32px;
@@ -121,7 +122,6 @@ h3 {
 }
 .intro__pre-order {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .intro__cta {
@@ -149,7 +149,9 @@ h3 {
 
 /* Images */
 .images__top {
-  margin-right: -24px;
+  /* Makes image go to right-hand side of screen */
+  margin-left: auto;
+  margin-right: -48px;
   margin-bottom: 24px;
 
   width: 372px;
@@ -162,12 +164,13 @@ h3 {
   border-radius: 20px;
 }
 .bottom-images {
+  margin-bottom: 72px;
+
   display: flex;
   gap: 24px;
 }
 .images__orange {
   margin-left: -48px;
-  margin-bottom: 72px;
 
   width: 129px;
   height: 193px;
@@ -196,23 +199,34 @@ h3 {
 .desc {
   margin-bottom: 110px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   text-align: center;
 }
 .desc__header {
   margin-bottom: 24px;
+}
+.desc__text {
+  max-width: 30ch;
 }
 
 
 /* Features */
 .features {
   margin-bottom: 96px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30ch);
+  justify-content: center;
+  gap: 64px 64px;
 }
 .feature {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 64px;
   text-align: center;
 }
 .feature__logo-bg {
@@ -242,5 +256,154 @@ h3 {
 .footer > span {
   font-weight: 700;
 }
+
+/* #endregion */
+
+/* Media queries */
+/* #region */
+
+/* Separate media query to handle feature grid, as we don't want to have 3 columns */
+/* By 700 px, the grid should have already gone to 2 columns, keep it at this until there's enough room for 4 columns, at which point auto-fill will place 4 columns */
+@media only screen and (min-width: 700px) {
+  .features {
+    grid-template-columns: repeat(2, 30ch);
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .features {
+    grid-template-columns: repeat(auto-fill, 25ch);
+    gap: 30px;
+  }
+}
+
+/* Tablet */
+/* #region */
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin-inline: 40px;
+    margin-top: 40px;
+  }
+
+  /* Header */
+  .header__cta {
+    padding-inline: 24px;
+    padding-block: 16px;
+  
+    border-radius: 8px;
+  
+    background-color: var(--gray-200);
+    
+    color: var(--blue-600);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  
+  /* Intro and top image*/
+  /* Brig intro in line with top image */
+  .top-content {
+    margin-bottom: 40px;
+
+    display: flex;
+    gap: 72px;
+  }
+  .intro {
+    margin-bottom: 64px;
+
+    /* So button text stays on one line */
+    max-width: 40ch;
+  }
+  .intro__header {
+    margin-bottom: 32px;
+  }
+  .intro__text {
+    margin-bottom: 36px;
+  }
+  .intro__cta {
+    margin-right: 36px;
+
+    padding-inline: 24px;
+    padding-block: 16px;
+  }
+  .images__top {
+    margin-right: -196px;
+    margin-bottom: 24px;
+  
+    width: 478px;
+    height: 425px;
+  
+    background-image: url('assets/tablet/image-keyboard.jpg');
+  }
+
+  /* Bottom images */
+  .bottom-images {
+    margin-bottom: 72px;
+    
+    gap: 32px;
+  }
+  .images__orange {
+    /* Image no longer going off screen, but instead in line with body margin */
+    margin-left: unset;
+    width: 214px;
+    height: 320px;
+
+    background-image: url('assets/tablet/image-phone-and-keyboard.jpg');
+  }
+  .images__side {
+    width: 445px;
+    height: 320px;
+  
+    background-image: url('assets/tablet/image-glass-and-keyboard.jpg');
+  
+    border-radius: 20px;
+  }
+
+  /* Description */
+  .desc {
+    display: flex;
+    flex-direction: row;
+    gap: clamp(36px, 20%, 100px);
+
+    text-align: left;
+  }
+  .desc__header {
+    max-width: 20ch;
+  }
+  .desc__text {
+    max-width: 40ch;
+  }
+
+  /* Features */
+  .features {
+    margin-bottom: 144px;
+  }
+  .feature {
+    align-items: flex-start;
+
+    text-align: left;
+  }
+  .feature__logo-bg {
+    margin-bottom: 40px;
+  }
+  .feature__header {
+    margin-bottom: 24px;
+  }
+}
+
+/* #endregion */
+
+/* Desktop */
+/* #region */
+
+@media only screen and (min-width: 1150px) {
+  body {
+    max-width: 1110px;
+
+    margin-inline: auto;
+  }
+}
+
+/* #endregion */
 
 /* #endregion */
