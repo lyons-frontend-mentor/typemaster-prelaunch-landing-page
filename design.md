@@ -268,7 +268,6 @@
   - Border radius 20 on all images
   - Top-view
     - 540 x 480
-    - mr-(-160)
     - mb-30
   - Side-view
     - 445 x 320
