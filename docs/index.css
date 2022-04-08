@@ -74,6 +74,11 @@ h3 {
 /* General and mobile styling */
 /* #region */
 
+body {
+  /* Makes it so that decorative rectangles and overflowing images don't trigger horizontal scrollbar; all actual content will stay visible */
+  overflow-x: hidden;
+}
+
 /* Header */
 .header {
   display: flex;
