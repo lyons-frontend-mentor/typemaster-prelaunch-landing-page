@@ -8,8 +8,8 @@ Create a responsive pre-launch landing page for a product based on designs in Fi
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Access the live site [here](https://lyons-frontend-mentor.github.io/typemaster-prelaunch-landing-page/)
+- See the solution [here](https://www.frontendmentor.io/solutions/mobilefirst-solution-using-bemcss-B1XIPlAmc).
+- Access the live site [here](https://lyons-frontend-mentor.github.io/typemaster-prelaunch-landing-page/).
 
 ### Built with
 
