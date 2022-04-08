@@ -35,7 +35,7 @@ img {
 /* #region */
 
 body {
-  margin-top: 24px;
+  margin-block-start: 24px;
   margin-inline: 24px;
 
   color: var(--blue-400);
@@ -45,7 +45,7 @@ body {
   font-weight: 500;
 }
 
-h1 {
+.intro__header {
   color: var(--blue-600);
   font-size: 48px;
   line-height: 1.0;
@@ -53,7 +53,7 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
+.desc__header {
   color: var(--blue-600);
   font-size: 32px;
   line-height: 36px;
@@ -61,7 +61,7 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
+.feature__header {
   color: var(--blue-600);
   font-size: 24px;
   line-height: 28px;
@@ -175,7 +175,7 @@ body {
   display: flex;
   gap: 24px;
 }
-.images__orange {
+.bottom-images__orange {
   margin-left: -48px;
 
   width: 129px;
@@ -189,7 +189,7 @@ body {
 
   border-radius: 20px;
 }
-.images__side {
+.bottom-images__side {
   width: 220px;
   height: 193px;
 
@@ -275,7 +275,7 @@ body {
     grid-template-columns: repeat(2, 30ch);
   }
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1150px) {
   .features {
     grid-template-columns: repeat(auto-fill, 28ch);
     gap: 30px;
@@ -288,7 +288,7 @@ body {
 @media only screen and (min-width: 768px) {
   body {
     margin-inline: 40px;
-    margin-top: 40px;
+    margin-block-start: 40px;
   }
 
   /* Header */
@@ -347,7 +347,7 @@ body {
     
     gap: 32px;
   }
-  .images__orange {
+  .bottom-images__orange {
     /* Image no longer going off screen, but instead in line with body margin */
     margin-left: unset;
     width: 214px;
@@ -355,7 +355,7 @@ body {
 
     background-image: url('assets/tablet/image-phone-and-keyboard.jpg');
   }
-  .images__side {
+  .bottom-images__side {
     width: 445px;
     height: 320px;
   
@@ -405,7 +405,7 @@ body {
   body {
     /* Margin now automatic */
     margin-inline: unset;
-    margin-top: 55px;
+    margin-block-start: 55px;
 
     max-width: 1110px;
 
@@ -481,7 +481,7 @@ body {
     
     gap: 32px;
   }
-  .images__orange {
+  .bottom-images__orange {
     /* Image no longer going off screen, but instead in line with body margin */
     margin-left: unset;
 
@@ -491,7 +491,7 @@ body {
 
     background-image: url('assets/desktop/image-phone-and-keyboard.jpg');
   }
-  .images__orange::before {
+  .bottom-images__orange::before {
     bottom: 0;
     left: calc(-100% - 36px);
 
@@ -504,7 +504,7 @@ body {
     border-radius: 20px;
     background-color: var(--gray-200);
   }
-  .images__side {
+  .bottom-images__side {
     width: 445px;
     height: 480px;
   
